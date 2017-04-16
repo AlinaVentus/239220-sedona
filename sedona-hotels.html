@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+   
+    <header class="main-header">
+        <div class="container">
+             <nav class="main-navigation">
+              <ul>
+                <li>
+                  <a href="#">ИНФОРМАЦИЯ</a>
+                </li>
+                <li>
+                  <a href="#">ФОТО И ВИДЕО</a>
+                </li>
+                <li>
+                  <a href="#">КАРТА ШТАТА</a>
+                </li>
+                <li>
+                  <a href="#">ГОСТИНИЦЫ</a>
+                </li>
+              </ul>
+             </nav>
+             <div class="logo">
+                <img src="" alt="логотип">
+             </div> 
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="choice">
+            <div class="choice-infrastruktura">
+                <p>ИНФРАСТРУКТУРА</p>
+                
+                <input type="checkbox" id="choice-pool">
+                <label for="choice-pool">
+                    БАССЕЙН
+                </label>
+                
+                 <input type="checkbox" id="choice-parking">
+                <label for="choice-parking">
+                    ПАРКОВКА
+                </label>
+                
+                 <input type="checkbox" id="choice-wi-fi">
+                <label for="choice-wi-fi">
+                    WI-FI
+                </label>
+            </div>
+                 
+            <div class="choice-type">
+                 <p>ТИП ЖИЛЬЯ:</p>
+                
+                <input type="checkbox" id="choice-hotel">
+                <label for="choice-hotel">
+                    ГОСТИНИЦА
+                </label>
+                
+                 <input type="checkbox" id="choice-motel">
+                <label for="choice-motel">
+                    МОТЕЛЬ
+                </label>
+                
+                 <input type="checkbox" id="choice-apartment">
+                <label for="choice-apartment">
+                    АПАРТАМЕНТЫ
+                </label>
+            </div>
+            
+            <div class="choice-price">
+                
+                 <div>0</div>
+                 <input type="range" min="0" max="300" step="1"> 
+                 <div>300</div>
+            </div>
+        </div>
+        
+       
+        <div class="found">
+            <p>НАЙДЕНО: 3</p>
+            <p>СОРТИРОВКА</p>
+            <ul>
+                <li> ПО ЦЕНЕ</li>
+                <li> ПО ТИПУ</li>
+                <li> ПО РЕЙТИНГУ</li>
+            </ul>
+            <div class="found-up">
+                <img src="" alt="стрелка" class="found-icon-up">
+            </div>
+            <div class="found-down">
+                <img src="" alt="стрелка" class="found-icon-down">
+            </div>
+        </div>
+        
+        <section class="found-hotels">
+           <div class="AMARA-RESORT">
+               <img src="" alt="AMARA-RESORT">
+               <h2>AMARA-RESORT & SPA</h2>
+               <p>ГОСТИНИЦА</p>
+               <p>ОТ 3500Р</p>
+               <div class="found-hotels-more">
+                   <a href="#">ПОДРОБНЕЕ</a>
+               </div>
+               <button type="button">
+                    ЗАБРОНИРОВАТЬ
+               </button>
+               <div class="found-hotels-star">
+                   <ul>
+                       <li>
+                           <img src="" alt="звезда">
+                       </li>
+                        <li>
+                           <img src="" alt="звезда">
+                       </li>
+                        <li>
+                           <img src="" alt="звезда">
+                       </li>
+                        <li>
+                           <img src="" alt="звезда">
+                       </li>
+                   </ul>
+               </div>
+               <div class="found-hotels-rating">
+                   <p>РЕЙТИНГ:8,5</p>
+               </div>
+           </div>
+           
+           <div class="DESERT-QUAIL">
+               <img src="" alt="DESERT-QUAIL">
+               <h2>DESERT QUAIL INN</h2>
+               <p>МОТЕЛЬ</p>
+               <p>ОТ 2000Р</p>
+               <div class="found-hotels-more">
+                   <a href="#">ПОДРОБНЕЕ</a>
+               </div>
+               <button type="button">
+                    ЗАБРОНИРОВАТЬ
+               </button>
+               <div class="found-hotels-star">
+                   <ul>
+                       <li>
+                           <img src="" alt="звезда">
+                       </li>
+                        <li>
+                           <img src="" alt="звезда">
+                       </li>
+                   </ul>
+               </div>
+               <div class="found-hotels-rating">
+                   <p>РЕЙТИНГ:8,9</p>
+               </div>
+           </div>
+           
+           <div class="VILLAS-AT-POCO">
+               <img src="" alt="VILLAS AT POCO DIABLO">
+               <h2>VILLAS AT POCO DIABLO</h2>
+               <p>АПАРТАМЕНТЫ</p>
+               <p>ОТ 4000Р</p>
+               <div class="found-hotels-more">
+                   <a href="#">ПОДРОБНЕЕ</a>
+               </div>
+               <button type="button">
+                    ЗАБРОНИРОВАТЬ
+               </button>
+               <div class="found-hotels-star">
+                   <ul>
+                       <li>
+                           <img src="" alt="звезда">
+                       </li>
+                        <li>
+                           <img src="" alt="звезда">
+                       </li>
+                        <li>
+                           <img src="" alt="звезда">
+                       </li>
+                   </ul>
+               </div>
+               <div class="found-hotels-rating">
+                   <p>РЕЙТИНГ:9,2</p>
+               </div>
+           </div>
+       </section>
+     </main>
+      <footer class="footer">
+          <div>#visitsedona</div> 
+          
+          <!в какой тег лучше обернуть>
+          <div class="footer-icon">
+              <ul>
+                  <li><img src="" alt="tw-icon"></li>
+                  <li><img src="" alt="fc-icon"></li>
+                  <li><img src="" alt="yt-icon"></li>
+              </ul>
+          </div>
+          <div class="footer-logo">
+              <img src="https://htmlacademy.ru/intensive/htmlcss" alt="htmlacademy">
+          </div>
+      </footer>
+     
+  </body>
+</html>

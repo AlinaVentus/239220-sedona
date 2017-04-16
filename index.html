@@ -5,7 +5,177 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-      <h1>привет Виктория </h1>
+   
+    <header class="main-header">
+        <div class="container">
+             <nav class="main-navigation">
+              <ul>
+                <li>
+                  <a href="#">ИНФОРМАЦИЯ</a>
+                </li>
+                <li>
+                  <a href="#">ФОТО И ВИДЕО</a>
+                </li>
+                <li>
+                  <a href="#">КАРТА ШТАТА</a>
+                </li>
+                <li>
+                  <a href="#">ГОСТИНИЦЫ</a>
+                </li>
+              </ul>
+             </nav>
+             <div class="logo">
+                <img src="" alt="логотип">
+             </div> 
+        </div>
+    </header>
+    
+    <main class="container">
+           
+            <div class="main-image">
+             <img src="http://placehold.it/150x100" alt="Седона" width="1200px" height="?">
+             <p>WELCOME</p>
+             <p>to the gorgeous</p>
+             <h1>SEDONA</h1>
+             <p>"Because the Grand <br> 
+                 Canyon sucks"</p>
+            </div>
+            
+            <div class="subtitle">
+               <h2>СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+                <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КОНЬОН!
+                </p>
+            </div>
+            
+            <section class="advantages">
+               <div class="advantages-item">
+                   <div class="advantages-description">
+                       <p>НАСТОЯЩИЙ ГОРОДОК</p>
+                       <p>№1</p>
+                       <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                   </div>
+                   <div class="advantages-image">
+                       <img src="http://placehold.it/150x100" alt="Седона" width="" height="">
+                   </div>
+               </div>
+               
+               <div class="advantages-item">
+                   <ul>
+                      <!МОЖНО СДЕЛАТЬ НЕУП СПИСКОМ?>
+                       <li>
+                           <img src="" alt="иконка" class="advantages-icon">
+                           <p>ЖИЛЬЕ</p>
+                            
+                           <!КАКИМ ТЕГОМ ЛУЧШЕ ДЕЛАТЬ ? РАЗМЕР ШРИФТА ТО РАЗНЫЙ>
+                           
+                           <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+                       </li>
+                       <li>
+                           <img src="" alt="иконка" class="advantages-icon">
+                           <p>ЕДА</p>
+                           <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                       </li>
+                       <li>
+                           <img src="" alt="иконка" class="advantages-icon">
+                           <p>СУВЕНИРЫ</p>
+                           <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+                       </li>
+                     </ul>
+               </div>
+               
+               <div class="advantages-item">
+                   <div class="advantages-image">
+                       <img src="http://placehold.it/150x100" alt="Седона" width="" height="">
+                   </div>
+                   <div class="advantages-description">
+                       <p>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</p>
+                       <p>№2</p>
+                       <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+                   </div>
+               </div>
+               
+                 <div class="advantages-item">
+                   <ul>
+                       <li>
+                           <p>НЕБОЛЬШАЯ ПЛОЩАДЬ</p>
+                           <p>№3</p>
+                           <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+                       </li>
+                       <li>
+                           <p>КРАСИВАЯ ДОРОГА</p>
+                           <p>№4</p>
+                           <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+                       </li>
+                       <li>
+                           <p>МАЛО ТУРИСТОВ</p>
+                           <p>№5</p>
+                           <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+                       </li>
+                     </ul>
+               </div>
+                
+            </section>
+            
+            <section class="hotel">
+                <div class="hotel-title">
+                    <p>ЗАИНТЕРЕСОВАЛИСЬ?</p>
+                    <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+                </div>
+                <div class="hotel-map">
+                    <img src="" alt="Карта" width="" height="">
+                </div>
+                <div class="hotel-search">
+                   <div class="hotel-search-header">
+                       <p>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</p>
+                   </div>
+                   <div class="hotel-search-form">
+                    <form action="" method="post" >
+                        <label for="arrival"> ДАТА ЗАЕЗДА
+                           <input type="date" name="calendar" id="arrival">
+                        </label>  
+                        
+                        <label for="hotel-departure"> ДАТА ЗАЕЗДА
+                           <input type="date" name="calendar" id="hotel-departure">
+                        </label> 
+                        
+                         <label> ВЗРОСЛЫЕ
+                          <div class="hotel-grown">
+                             <button type="button">-</button>
+                             <input type="text" name="number">
+                             <button type="button">+</button>
+                          </div>
+                         </label> 
+                         
+                        <label> ДЕТИ
+                            <div class="hotel-children">
+                             <button type="button">-</button>
+                             <input type="text" name="number">
+                             <button type="button">+</button>
+                          </div>
+                        </label>
+                        
+                        <input type="submit" value="НАЙТИ" class="hotel-btn"> 
+                    </form>
+                    </div>
+                </div>
+            </section>
       
+      </main>
+      <footer class="footer">
+          <div>#visitsedona</div> 
+          
+          <!в какой тег лучше обернуть>
+          <div class="footer-icon">
+              <ul>
+                  <li><img src="" alt="tw-icon"></li>
+                  <li><img src="" alt="fc-icon"></li>
+                  <li><img src="" alt="yt-icon"></li>
+              </ul>
+          </div>
+          <div class="footer-logo">
+              <img src="https://htmlacademy.ru/intensive/htmlcss" alt="htmlacademy">
+          </div>
+      </footer>
+     
   </body>
 </html>
