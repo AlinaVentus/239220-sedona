@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
    <div class="container">
@@ -24,7 +25,7 @@
               </ul>
              </nav>
              <div class="logo">
-                <img src="http://placehold.it/40x50" alt="логотип">
+                <img src="img/logo.png" alt="логотип">
              </div> 
     </header>
     
@@ -35,7 +36,7 @@
             </div>
             
             <div class="subtitle">
-               <h2>Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
+               <h2 class="subtitle-title">Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
                 <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Коньон!
                 </p>
             </div>
@@ -55,7 +56,7 @@
                <div class="advantages-item">
                       <div class="advantages-housing">
                            <img src="http://placehold.it/100x100" alt="иконка" class="advantages-icon">
-                           <h3>Жилье</h3>
+                           <h3 class="advantages-title">Жилье</h3>
                            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                      </div>
                       <div class="advantages-food">
@@ -110,7 +111,7 @@
                 </div>
     
                 <div class="hotel-form">
-                    <form action="" method="post" >
+                    <form action="#" method="post" >
                         <label for="arrival"> Дата заезда                           <input type="date" name="calendar" id="arrival">
                         </label>  
                         
@@ -118,21 +119,23 @@
                            <input type="date" name="calendar" id="hotel-departure">
                         </label> 
                         
-                         <label> Взрослые
+                         <label>
+                              Взрослые  
+                         </label>
                           <div class="hotel-grown">
                              <button type="button">-</button>
                              <input type="text" name="number">
                              <button type="button">+</button>
                           </div>
-                         </label> 
+                      
                          
-                        <label> Дети
+                        <label> Дети  </label>
                             <div class="hotel-children">
                              <button type="button">-</button>
                              <input type="text" name="number">
                              <button type="button">+</button>
                           </div>
-                        </label>
+                       
                         
                         <input type="submit" value="НАЙТИ" class="hotel-btn"> 
                     </form>
@@ -156,7 +159,9 @@
           </div>
           <div class="footer-logo">
               <p>Website by</p>
-              <img src="https://htmlacademy.ru/intensive/htmlcss" alt="htmlacademy">
+              <a href="https://htmlacademy.ru/intensive/htmlcss">
+                  <img src="http://placehold.it/30x30" alt="htmlacademy">
+              </a>
           </div>
       </footer>
       </div> 
