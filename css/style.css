@@ -3,19 +3,21 @@ body{
     line-height: normal;
     color: red;
     font-weight: normal;
-    font-family: Sans Regular;
-}
+    font-family: "Sans Regular", sans-serif;}
+
 .subtitle-title{
     font-size: 26px;
     line-height: normal;
     color: #000000;
     font-weight: normal;
-    font-family: Sans Bold;
-}
+    font-family: "Sans Bold", sans-serif;}
+
 .advantages-title{
    font-size: 21px;
     line-height: normal;
     color: #000000;
     font-weight: normal;
-    font-family: Sans Bold; 
-}
+    font-family: "Sans Bold", sans-serif;}
+
+.footer{
+    background-color: black;}
