@@ -1,23 +1,186 @@
 body{
     font-size: 14px;
     line-height: normal;
-    color: red;
     font-weight: normal;
-    font-family: "Sans Regular", sans-serif;}
-
+    font-family: "Sans Regular", sans-serif;
+}
 .subtitle-title{
     font-size: 26px;
     line-height: normal;
-    color: #000000;
     font-weight: normal;
-    font-family: "Sans Bold", sans-serif;}
-
+    font-family: "Sans Bold", sans-serif;
+}
 .advantages-title{
    font-size: 21px;
     line-height: normal;
-    color: #000000;
     font-weight: normal;
-    font-family: "Sans Bold", sans-serif;}
+    font-family: "Sans Bold", sans-serif;
+}
 
-.footer{
-    background-color: black;}
+/*сетка */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.main-header{
+    min-height: 60px;
+    background-color: antiquewhite;
+}
+.main-image{
+    height: 510px;
+}
+.img-title{
+    width: 576px;
+    margin-left: 314px;
+}
+.subtitle{
+    width: 576px;
+    margin: 0 auto;
+    background-color: beige;
+}
+.advantages-description1{
+    width: 400px;
+    height: 260px;
+    float: left;
+    background-color: deepskyblue;
+    margin-bottom: 85px;
+    
+}
+.advantages-image1{
+    width: 800px;
+    height: 260px;
+    float: right;    
+}
+.advantages-housing{
+    width: 328px;
+    float: left;
+}
+.advantages-food{
+    width: 404px;
+    float: left;
+    background-color: rosybrown;
+}
+.advantages-souvenir{
+    width: 400px;
+    float: right;
+    background-color: pink;
+}
+.advantages-description2{
+    width: 400px;
+    height: 260px;
+    float: right;
+    background-color: deepskyblue;
+    margin-top: 85px;
+}
+.advantages-image2{
+    width: 800px;
+    height: 260px;
+    float: left; 
+    margin-top: 85px;
+}
+.advantages-item{
+    clear: both;
+}
+.advantages-square1{
+    width: 240px;
+    margin-left: 73px;
+    float: left;
+    background-color: beige;
+    padding-top: 42px;
+    padding-bottom: 60px;
+}
+.advantages-square2{
+    width: 400px;
+    float: left;
+    background-color: palegoldenrod;
+    padding-top: 42px;
+    padding-bottom: 60px;
+}
+.advantages-square3{
+    width: 400px;
+    float: left;
+    background-color: olivedrab;
+    padding-top: 42px;
+    padding-bottom: 60px;
+}
+.hotel-title{
+    width: 575px;
+    min-height: height: 205px;
+    clear: both;
+    margin: 0 auto;
+}
+.title-form{
+    height: 86px;
+    width: 575px;
+    background-color: brown;
+    margin: 0 auto;
+    display: block;
+}
+.hotel-map{
+    height: 476px;
+    background-color: green;
+}
+.hotel-form{
+    width: 575px;
+    height:397;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+.footer-visit{
+    width: 240px;
+    float: left;
+    padding-top: 45px;
+    margin-left: 70px;
+    background-color: antiquewhite;
+}
+.footer-icon{
+    width: 400px;
+    float: left;
+    margin-left: 88px;
+    background-color: lightblue;
+     padding-top: 40px;
+}
+.footer-logo{
+    width: 240px;
+    margin-right: 73px;
+    float: right;
+    background-color: bisque;
+    padding-top: 35px;
+}
+
+/*сетка sedona-hotels.html*/
+.choice-infrastruktura{
+    width: 240px;
+    min-height: 220px;
+    background-color: skyblue;
+    float: left;
+}
+.choice-type{
+    width: 288px;
+    float: left;
+    height: 220px;
+}
+.choice-price{
+    width: 330px;
+    margin-right: 73px;
+    float: right;
+    background-color: beige;
+}
+.found{
+    min-height: 87px;
+    clear: both;
+}
+.found-hotels{
+    height: 150px;
+}
+.found-hotels-img{
+    margin-left: 73px;
+    float: left;
+}
+.found-hotels-dtscription{
+    float: left;
+    background-color: darkgray;
+}
+.found-hotels-valuation{
+    float: right;
+}
