@@ -3,60 +3,132 @@ body{
     min-width: 1200px;
     margin: 0;
     padding: 0;
+    font-family: "Sans Bold", sans-serif;
+    font-size: 14px;
+    min-width: 1280px;
+    background-color: #f2f2f2;
+    text-transform: uppercase;
+    color: #000;
+}
+.clearfix{
+    content: "";
+    clear: both;
+    display: table;
 }
 .container{
-    margin: 0 auto;/*только почему то не центрируется?*/
+    margin: 0 auto;
+    max-width: 1200px;
 }
-.main-header{
-    min-height: 55px;
-    background-color: antiquewhite;
+.main-header ul{
+    padding: 0;
+    margin: 0;
 }
-.main-navigation ul{
-    display: flex;
+.main-navigation li:nth-child(1){
+    float: left;
+}
+.main-navigation li:nth-child(2){
+    float: left;
+}
+.main-navigation li:nth-child(3){
+    float: right;
+}
+.main-navigation li:nth-child(4){
+    float: right;
 }
 .main-navigation li{
-    margin: 0;
+    display: inline-block;
     width: 239px;
     text-align: center;
-    min-height: 55px;
-    border: 1px solid;
-    /*как сделаь лого по серед на флексах?*/
+    min-height: 56px;
+    padding-top: 20px;
 }
 .main-navigation a{
-    text-decoration: none;/*как убрать эти точки неупоряд списка?*/
+    text-decoration: none;
+}
+.main-header{
+    position: relative; 
+    background-color: #fff;
+    min-height: 56px;
+    font-family: "Sans Bold", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+.main-header .logo{
+    position: absolute;
+    left: 530px;
 }
 .main-image{
-    background: url("img/backgroundphoto.jpg") no-repeat;/*не получилось*/
+    background: url("../img/backgroundmainimg.jpg") no-repeat;
     background-size: 1200px auto;
+    min-height: 510px;
+}
+.main-image-subtitle{
+    width: 576px;
+    margin-left: 370px;;
+    padding-top: 78px;
 }
 .subtitle{
-    min-height: 218px;
+    min-height: 175px;
     text-align: center;
-    padding-top: 55px;
+    padding-top: 40px;
+    background-color: #fff;
+    margin: 0;
+}
+.subtitle h2{
+    font-family: "Sans Bold", sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+}
+.subtitle p{
+    font-family: "Sans Italic", sans-serif;
+    font-size: 14px;
+    margin-top: 40px;
 }
 .advantages-item{
     display: flex;
+    margin-top: -15px;
+}
+.advantages-item-bold{
+    font-family: "Sans Bold", sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    color: #fff;
+    padding-top: 30px;
+}
+.advantages-item-Regular{
+    font-family: "Sans Regular", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    
 }
 .advantages-description{
     width: 400px;
-    min-height: 255px;
+    min-height: 275px;
     text-align: center;
-    background-color: antiquewhite;/* как сделаь так что бы текст был в по середине по вертикали?*/
+    background-color: #81b3d2;
+    margin: 0;
 }
 .advantages-image{
     width: 800px;
-    min-height: 255px;
+    min-height: 275px;
 }
 .advantages-icon div{
-    min-height: 330px;
+    min-height: 285px;
     text-align: center;
     width: 400px;
     padding-top: 55px;
+    background-color: #fff;
+}
+.advantages-square div{
+    background: #f2f2f2;
+    min-height: 200px;
 }
 .hotel-title{
-    min-height: 290px;
     text-align: center;
     padding-top: 55px;
+    background-color: #fff;
 }
 .title-form{
     min-height: 85px;
@@ -86,6 +158,8 @@ body{
 .footer{
     display: flex;
     min-height: 120px;
+    background-color: #fff;
+    opacity: 0,5;
 }
 .footer-item{
     width: 400px;
@@ -120,7 +194,6 @@ body{
 }
 .found-hotels{
     display: flex;
-    min-height: 150px;
     margin-bottom: 60px;
 }
 .found-hotels-img{
