@@ -1,205 +1,134 @@
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
-}
+html,
 body{
-    font-size: 14px;
-    line-height: normal;
-    font-weight: normal;
-    font-family: "Sans Regular", sans-serif;
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
 }
-.subtitle-title{
-    font-size: 26px;
-    line-height: normal;
-    font-weight: normal;
-    font-family: "Sans Bold", sans-serif;
-}
-.advantages-title{
-    font-size: 21px;
-    line-height: normal;
-    font-weight: normal;
-    font-family: "Sans Bold", sans-serif;
-}
-.main-navigation li{
-    display: inline-block;
-}
-.main-navigation li:nth-child(1){
-    float: left;
-}
-.main-navigation li:nth-child(2){
-    float: left;
-}
-.main-navigation li:nth-child(3){
-    float: right;
-}
-.main-navigation li:nth-child(4){
-    float: right;
-}
-
-/*сетка */
 .container{
-    width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto;/*только почему то не центрируется?*/
 }
 .main-header{
-    min-height: 60px;
+    min-height: 55px;
     background-color: antiquewhite;
+}
+.main-navigation ul{
+    display: flex;
+}
+.main-navigation li{
+    margin: 0;
+    width: 239px;
+    text-align: center;
+    min-height: 55px;
+    border: 1px solid;
+    /*как сделаь лого по серед на флексах?*/
+}
+.main-navigation a{
+    text-decoration: none;/*как убрать эти точки неупоряд списка?*/
 }
 .main-image{
-    min-height: 510px;
-}
-.img-title{
-    width: 576px;
-    margin-left: 314px;
+    background: url("img/backgroundphoto.jpg") no-repeat;/*не получилось*/
+    background-size: 1200px auto;
 }
 .subtitle{
+    min-height: 218px;
     text-align: center;
-    background-color: beige;
+    padding-top: 55px;
 }
-.advantages-description1{
+.advantages-item{
+    display: flex;
+}
+.advantages-description{
     width: 400px;
-    min-height: 260px;
-    float: left;
-    background-color: deepskyblue;
-    margin-bottom: 85px;
-    
+    min-height: 255px;
+    text-align: center;
+    background-color: antiquewhite;/* как сделаь так что бы текст был в по середине по вертикали?*/
 }
-.advantages-image1{
+.advantages-image{
     width: 800px;
-    min-height: 260px;
-    float: right;    
+    min-height: 255px;
 }
-.advantages-housing{
-    width: 328px;
-    float: left;
-}
-.advantages-food{
-    width: 404px;
-    float: left;
-    background-color: rosybrown;
-}
-.advantages-souvenir{
+.advantages-icon div{
+    min-height: 330px;
+    text-align: center;
     width: 400px;
-    float: right;
-    background-color: pink;
-}
-.advantages-image2{
-    width: 800px;
-    min-height: 260px;
-    float: left;
-    /* здесь не могу убрать*/
-    margin-top: 60px;
-}
-.advantages-description2{
-    width: 400px;
-    min-height: 260px;
-    float: right;
-    background-color: deepskyblue;
-    margin-top: 60px;
-
-}
-.advantages-square1{
-    width: 240px;
-    margin-left: 73px;
-    float: left;
-    background-color: beige;
-    padding-top: 42px;
-    padding-bottom: 60px;
-}
-.advantages-square2{
-    width: 400px;
-    float: left;
-    background-color: palegoldenrod;
-    padding-top: 42px;
-    padding-bottom: 60px;
-}
-.advantages-square3{
-    width: 400px;
-    float: left;
-    background-color: olivedrab;
-    padding-top: 42px;
-    padding-bottom: 60px;
+    padding-top: 55px;
 }
 .hotel-title{
-    width: 575px;
-    min-height: height: 205px;
-    margin: 0 auto;
+    min-height: 290px;
+    text-align: center;
+    padding-top: 55px;
 }
 .title-form{
-    min-height: 86px;
+    min-height: 85px;
     width: 575px;
-    background-color: brown;
-    margin: 0 auto;
-    display: block;
+    background-color: burlywood;
+    display: inline-block;
+    /*как сделать наждпись по центру по вертикали?
+    как сделать так что бы он прижался к низу? 
+    как сделать так что бы паддинги включались в мин высоту?*/
 }
 .hotel-map{
-    min-height: 476px;
-    background-color: green;
+    min-height: 475px;
+    background-color: aquamarine;
+    padding: 0;
 }
 .hotel-form{
+    min-height: 395px;
     width: 575px;
-    min-height:397;
+    background-color: azure;
     margin: 0 auto;
-    background-color: antiquewhite;
 }
-.footer-visit{
-    width: 240px;
-    float: left;
-    padding-top: 45px;
-    margin-left: 70px;
-    background-color: antiquewhite;
+.hotel-map form{
+    display: flex;
+    flex-direction: column;
+    /*как сделать взрослые и дети на одной строке?*/
 }
-.footer-icon{
+.footer{
+    display: flex;
+    min-height: 120px;
+}
+.footer-item{
     width: 400px;
-    float: left;
-    margin-left: 88px;
-    background-color: lightblue;
-     padding-top: 40px;
-}
-.footer-logo{
-    width: 240px;
-    margin-right: 73px;
-    float: right;
-    background-color: bisque;
-    padding-top: 35px;
+    text-align: center;
 }
 
-/*сетка sedona-hotels.html*/
-.choice-infrastruktura{
-    width: 240px;
+/*Sedona-hotels.html*/
+.choice{
+    display: flex;
     min-height: 220px;
-    background-color: skyblue;
-    float: left;
+}
+.choice-infrastruktura{
+    width: 312px;
+    text-align: center;
 }
 .choice-type{
     width: 288px;
-    float: left;
-    min-height: 220px;
+    text-align: center;
 }
 .choice-price{
-    width: 330px;
-    margin-right: 73px;
-    float: right;
-    background-color: beige;
+    width: 600px;
+    text-align: center;
 }
 .found{
-    min-height: 87px;
+    min-height: 86px;
+}
+.found ul{
+    display: flex;
+}
+.found li{
+    margin-left: 20px;
 }
 .found-hotels{
+    display: flex;
     min-height: 150px;
+    margin-bottom: 60px;
 }
 .found-hotels-img{
     margin-left: 73px;
-    float: left;
 }
 .found-hotels-dtscription{
-    float: left;
-    background-color: darkgray;
+    margin-left: 30px;
 }
 .found-hotels-valuation{
-    float: right;
-}
-.found li{
-    display: inline-block;
+    margin-left: 530px;
 }
