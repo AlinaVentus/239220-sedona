@@ -1,16 +1,16 @@
 html,
 body{
-    min-width: 1200px;
     margin: 0;
     padding: 0;
-    font-family: "Sans Bold", sans-serif;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
     font-size: 14px;
     min-width: 1280px;
     background-color: #f2f2f2;
     text-transform: uppercase;
     color: #000;
 }
-.clearfix{
+.clearfix:after{
     content: "";
     clear: both;
     display: table;
@@ -18,16 +18,19 @@ body{
 .container{
     margin: 0 auto;
     max-width: 1200px;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.2);
+    /*получился по ярче делала на угад так как не смогла скопр с фотошопа для ссс*/
 }
 .main-header ul{
     padding: 0;
     margin: 0;
 }
 .main-navigation li:nth-child(1){
-    float: left;
+    float: left;   
 }
 .main-navigation li:nth-child(2){
     float: left;
+    margin-left: 5px;
 }
 .main-navigation li:nth-child(3){
     float: right;
@@ -39,8 +42,19 @@ body{
     display: inline-block;
     width: 239px;
     text-align: center;
-    min-height: 56px;
-    padding-top: 20px;
+    padding-top: 18px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    color: #000;
+}
+.main-header a:hover{
+    color: #81b3d2;
+}
+.main-header li:active{
+    color: #f3f3f3;/*????*/
+}
+.main-header li:visited{
+    color: #766357;/*????*/
 }
 .main-navigation a{
     text-decoration: none;
@@ -49,19 +63,27 @@ body{
     position: relative; 
     background-color: #fff;
     min-height: 56px;
-    font-family: "Sans Bold", sans-serif;
-    font-weight: 600;
+    font-family: "PT Sans", sans-serif;/*не могу свести пиксель в пиксиль*/
+    font-weight: bold;
     font-size: 14px;
-    letter-spacing: -1px;
 }
 .main-header .logo{
     position: absolute;
     left: 530px;
+    z-index: 1;
 }
 .main-image{
     background: url("../img/backgroundmainimg.jpg") no-repeat;
     background-size: 1200px auto;
     min-height: 510px;
+}
+.white-part{
+    width: 1200px;
+    min-height: 57px;
+    background-image: #000 url(../img/whitepart.png) no-repeat;
+    position: absolute;
+    z-index: 1;
+    bottom: 200px;   /* yt видно его?*/
 }
 .main-image-subtitle{
     width: 576px;
@@ -69,102 +91,344 @@ body{
     padding-top: 78px;
 }
 .subtitle{
-    min-height: 175px;
     text-align: center;
     padding-top: 40px;
     background-color: #fff;
     margin: 0;
+    padding-bottom: 40px;
+    /*нужно поставить более удленн - */
 }
 .subtitle h2{
-    font-family: "Sans Bold", sans-serif;
-    font-weight: 500;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
     font-size: 21px;
 }
 .subtitle p{
-    font-family: "Sans Italic", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 14px;
-    margin-top: 40px;
+    margin-top: 30px;
+    font-weight: 100;
+    color: #333;
 }
 .advantages-item{
     display: flex;
-    margin-top: -15px;
 }
 .advantages-item-bold{
-    font-family: "Sans Bold", sans-serif;
-    font-weight: 500;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
     font-size: 21px;
     color: #fff;
-    padding-top: 30px;
+    padding-top: 25px;
+    line-height: 1;
 }
 .advantages-item-Regular{
-    font-family: "Sans Regular", sans-serif;
-    font-weight: 500;
+    font-family: "PT Sans", sans-serif;
     font-size: 14px;
     color: #fff;
-    
+    padding-top: 8px;
+    font-weight: 100;
+}
+.advantages-description-image{
+    min-height: 256px;
 }
 .advantages-description{
     width: 400px;
-    min-height: 275px;
+    min-height: 256px;
     text-align: center;
     background-color: #81b3d2;
-    margin: 0;
 }
 .advantages-image{
     width: 800px;
-    min-height: 275px;
+    min-height: 256px;
+    padding: 0;
+    margin: 0;
 }
 .advantages-icon div{
-    min-height: 285px;
+    padding-top: 61px;
     text-align: center;
     width: 400px;
-    padding-top: 55px;
+    padding-top: 56px;
     background-color: #fff;
+    padding-bottom: 67px;
+    letter-spacing: 0px;
+}
+.advantages-icon div:last-child{
+    padding-top: 52px;
+}
+.advantages-icon h3{
+    font-family: "PT Sans", sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+}
+.advantages-icon p{
+    line-height: 1.5;
+    font-weight: 100;
+    color: #333;
 }
 .advantages-square div{
     background: #f2f2f2;
-    min-height: 200px;
+    text-align: center;
+    width: 400px;
+    padding-top: 20px;
+    line-height: 1;
+    padding-bottom: 25px;
+}
+.advantages-square p{
+    line-height: 1.8;
+    font-weight: 100;
+    color: #333;
+}
+.advantages-square h3{
+    font-family: "PT Sans", sans-serif;
+    font-size: 21px;
+    font-weight: bold;    
 }
 .hotel-title{
     text-align: center;
-    padding-top: 55px;
+    padding-top: 24px;
     background-color: #fff;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: -1px;
+}
+.hotel-title p{
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: normal;
+    line-height: 1.4;
+    font-weight: 100;
+    color: #333;
 }
 .title-form{
-    min-height: 85px;
-    width: 575px;
-    background-color: burlywood;
+    width: 570px;
+    background-color: #766357;
     display: inline-block;
-    /*как сделать наждпись по центру по вертикали?
-    как сделать так что бы он прижался к низу? 
-    как сделать так что бы паддинги включались в мин высоту?*/
+    color: #fff;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    text-decoration: none;
+    padding-top: 30px;
+    margin-top: 35px;
+    padding-bottom: 30px;
+    letter-spacing: 0px;
 }
 .hotel-map{
-    min-height: 475px;
-    background-color: aquamarine;
+    min-height: 595px;
+    background-image: url(../img/map2.jpg);
     padding: 0;
+    position: relative;
 }
 .hotel-form{
     min-height: 395px;
-    width: 575px;
-    background-color: azure;
+    width: 570px;
+    background-color: #fff;
     margin: 0 auto;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
 }
-.hotel-map form{
-    display: flex;
-    flex-direction: column;
-    /*как сделать взрослые и дети на одной строке?*/
+.hotel-form label{
+    margin-left: 57px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+.hotel-form .arrival input{
+    width: 331px;
+    height: 38px;
+    margin-top: 55px;
+    background-color: #f2f2f2;
+    border: none;
+    margin-left: 16px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    padding-left: 12px;
+}
+.hotel-form .arrival input:hover{
+    background-color: #ebebeb;
+}
+.hotel-form .arrival input:focus{
+    background-color: #fff;
+}
+.hotel-form .departure input{
+    width: 331px;
+    height: 38px;
+    margin-top: 27px;
+    background-color: #f2f2f2;
+    border: none;
+    margin-left: 13px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    padding-left: 12px;
+}
+.hotel-form .departure input:hover{
+    background-color: #ebebeb;
+}
+.hotel-form .departure input:focus{
+    background-color: #fff;
+}
+.hotel-form-search1{
+    display: inline-block;
+    margin-top: 37px;
+    float: left;
+    margin-right: 40px;
+}
+.hotel-grown{
+    display: inline-block;
+    float: left;
+    margin-top: 27px;
+}
+.hotel-grown input{
+    width: 22px;
+    min-height: 36px;
+    border: none;
+    background-color: #f2f2f2;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 15px;  
+}
+.hotel-form-search2{
+    display: inline-block;
+    margin-top: 37px;
+    float: left;
+    margin-right: 40px;
+}
+.hotel-children{
+    display: inline-block;
+    float: left;
+    margin-top: 27px;
+    margin-left: -10px;
+}
+.hotel-grown button{
+    width: 38px;
+    height: 38px;
+    margin: -4px;
+    border: none;
+    background-color: #f2f2f2;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;   
+}
+.hotel-children button{
+    width: 38px;
+    height: 38px;
+    margin: -4px;
+    border: none;
+    background-color: #f2f2f2;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;   
+}
+.hotel-children input{
+    width: 22px;
+    min-height: 36px;
+    border: none;
+    background-color: #f2f2f2;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 15px;  
+}
+.hotel-btn{
+    width: 458px;
+    min-height: 58px;
+    background-color: #81b3d2;
+    border: none;
+    margin-top: 54px;
+    margin-left: 56px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    color: #fff;
+}
+.hotel-btn:hover{
+    background-color: #669ec0;
+}
+.hotel-btn:active{
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.9);
 }
 .footer{
     display: flex;
     min-height: 120px;
-    background-color: #fff;
-    opacity: 0,5;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    width: 1200px;
+    top: 2644px;
+    position: absolute;
 }
 .footer-item{
     width: 400px;
     text-align: center;
 }
+.footer-visit{
+    padding-top: 45px;
+}
+.footer-icon a{
+    display: inline-block;
+    margin-top: 36px; 
+}
+.footer-icon a{
+    width: 46px;
+    min-height: 48px; 
+    margin-left: 0px;
+    text-decoration: none;
+    text-indent: -999999px;
+}
+.footer-icon a:hover{
+    background-color: #669ec0;
+}
+.footer-icon a:active{
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.9);
+}
+.footer-icon .tw{
+    background-image: url(../img/spritesheet.png);
+    background-position: -165px -168px;
+    background-color: #81b3d2;
+}
+.footer-icon .fb{
+    background-image: url(../img/spritesheet.png);
+    background-color: #81b3d2;
+    background-position: 254px 212px;
+    
+}
+.footer-icon .yt{
+    background-image: url(../img/spritesheet.png);
+    background-color: #81b3d2;
+    background-position: -243px -168px;
+}
+.footer-logo{
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    position: relative;
+    margin-top: 35px;
+    margin-left: -60px;
+    font-weight: 100;
+}
+.footer-logo a{
+    margin-top: 5px;
+    margin-left: 7px;  
+    position: absolute;
+    top: 0px;
+}
+
+
+
 
 /*Sedona-hotels.html*/
 .choice{
