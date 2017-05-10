@@ -37,14 +37,15 @@ body{
 }
 .main-navigation li:nth-child(4){
     float: right;
+    
 }
 .main-navigation li{
     display: inline-block;
     width: 239px;
     text-align: center;
     padding-top: 18px;
-    letter-spacing: 0.5px;
-    font-weight: bold;
+    letter-spacing: 0.2px;
+    font-weight: 600;
     color: #000;
 }
 .main-header a:hover{
@@ -69,7 +70,7 @@ body{
 }
 .main-header .logo{
     position: absolute;
-    left: 530px;
+    left: 532px;
     z-index: 1;
 }
 .main-image{
@@ -129,19 +130,23 @@ body{
     font-weight: 100;
 }
 .advantages-description-image{
-    min-height: 256px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .advantages-description{
-    width: 400px;
+    width: 34%;
     min-height: 256px;
     text-align: center;
     background-color: #81b3d2;
+    overflow: hidden;
 }
 .advantages-image{
-    width: 800px;
-    min-height: 256px;
-    padding: 0;
-    margin: 0;
+    position: absolute;
+    width: 66%;
+    overflow: hidden;
+    right: 0;
 }
 .advantages-icon div{
     padding-top: 61px;
@@ -433,39 +438,189 @@ body{
 /*Sedona-hotels.html*/
 .choice{
     display: flex;
-    min-height: 220px;
+    min-height: 216px;
+    width: 1200px;
+    background-image: url(../img/background-hotel.jpg);
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+.choice h2{
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;  
+    font-weight: 500;
+}
+.choice label{
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;  
+    font-weight: 200;
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: 13px;
+    letter-spacing: 0px;
 }
 .choice-infrastruktura{
     width: 312px;
-    text-align: center;
+    margin-left: 70px;
+    margin-top: 15px;
 }
 .choice-type{
     width: 288px;
-    text-align: center;
+    margin-left: -50px;
+    margin-top: 15px;
 }
 .choice-price{
     width: 600px;
+    margin-top: 15px;
     text-align: center;
+    letter-spacing: 0px;
+}
+.choice-price div{
+    width: 160px;
+    min-height: 25px;
+    border: solid 2px #fff;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding-top: 5px;
+    margin-left: -5px;
+}
+.choice-price input{
+    display: block;   
+}
+.choice-price h2{
+    margin-left: -8px;
 }
 .found{
-    min-height: 86px;
+    display: flex;
+    padding-left: 70px;
+    padding-top: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 8px;
+}
+.found-title{
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+}
+.found-subtitle{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    padding-left: 50px;
+    padding-top: 18px;
 }
 .found ul{
-    display: flex;
+    padding: 0;
 }
 .found li{
     margin-left: 20px;
+    display: inline-block;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    padding-top: 15px;
+}
+.found a{
+    text-decoration: none;
+}
+.found-price a{
+    margin-left: 20px;
+    color: #81b3d2;
+}
+.found-type a{
+    margin-left: 9px;
+    color: #cacaca;
+    border-bottom: 1px dotted #81b3d2;
+}
+.found-rating a{
+    margin-left: 9px;
+    color: #cacaca;
+    border-bottom: 1px dotted #81b3d2;
 }
 .found-hotels{
     display: flex;
-    margin-bottom: 60px;
+    background-color: #fff;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #cacaca;    
 }
 .found-hotels-img{
-    margin-left: 73px;
+    margin-left: 72px;
+    margin-top: 30px;
 }
 .found-hotels-dtscription{
     margin-left: 30px;
+    width: 800px;
+}
+.found-hotels-dtscription h2{
+    margin: 0;
+    margin-top: 25px;
+}
+.found-hotels-dtscription p{
+    display: inline-block;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 7px;
+    width: 112px;
+}
+.found-hotels-more{
+    display: inline-block;
+    min-height: 20px;
+    width: 110px;
+    background-color: #81b3d2;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.found-hotels-book{
+    display: inline-block;
+    min-height: 20px;
+    width: 142px;
+    background-color: #766357;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 3px;
+}
+.found-hotels-star{
+    margin-top: 28px;
+    text-align: right;
+    
+}
+.found-hotels-rating{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    width: 110px;
+    text-align: center;
+    min-height: 26px;/*yе смогла по центру сделать*/
 }
 .found-hotels-valuation{
-    margin-left: 530px;
+    margin-right: 72px;    
+}
+.footer-hotels{
+    display: flex;
+    min-height: 120px;
+    background-color: #fff;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    width: 1200px;
 }
