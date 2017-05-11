@@ -19,7 +19,6 @@ body{
     margin: 0 auto;
     max-width: 1200px;
     box-shadow: 0 0 10px 3px rgba(0,0,0,0.2);
-    /*получился по ярче делала на угад так как не смогла скопр с фотошопа для ссс*/
 }
 .main-header ul{
     padding: 0;
@@ -30,32 +29,37 @@ body{
 }
 .main-navigation li:nth-child(2){
     float: left;
-    margin-left: 5px;
+    margin-left: 3px;
 }
 .main-navigation li:nth-child(3){
     float: right;
+      margin-right: -8px; 
 }
 .main-navigation li:nth-child(4){
     float: right;
-    
+    padding-right: 8px;
 }
 .main-navigation li{
-    display: inline-block;
     width: 239px;
     text-align: center;
     padding-top: 18px;
     letter-spacing: 0.2px;
     font-weight: 600;
     color: #000;
+    list-style-type: none;
 }
 .main-header a:hover{
     color: #81b3d2;
 }
-.main-header li:active{
-    color: #f3f3f3;/*????*/
+.main-header a:active{
+    color: #cacaca;
+}
+.active-link a{
+    color: #766357;
 }
 .main-header li:visited{
-    color: #766357;/*????*/
+    color: #766357;
+    padding-right: 10px;
 }
 .main-navigation a{
     text-decoration: none;
@@ -63,8 +67,8 @@ body{
 .main-header{
     position: relative; 
     background-color: #fff;
-    min-height: 56px;
-    font-family: "PT Sans", sans-serif;/*не могу свести пиксель в пиксиль*/
+    min-height: 55px;
+    font-family: "PT Sans", sans-serif;
     font-weight: bold;
     font-size: 14px;
 }
@@ -72,6 +76,7 @@ body{
     position: absolute;
     left: 532px;
     z-index: 1;
+    top: 0;
 }
 .main-image{
     background: url("../img/backgroundmainimg.jpg") no-repeat;
@@ -99,7 +104,6 @@ body{
     background-color: #fff;
     margin: 0;
     padding-bottom: 40px;
-    /*нужно поставить более удленн - */
 }
 .subtitle h2{
     font-family: "PT Sans", sans-serif;
@@ -118,7 +122,7 @@ body{
 }
 .advantages-item-bold{
     font-family: "PT Sans", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 21px;
     color: #fff;
     padding-top: 27px;
@@ -126,14 +130,14 @@ body{
     letter-spacing: 0.5px;
     padding-left: 9px;
 }
-.advantages-item-Regular{
+.advantages-item-regular{
     font-family: "PT Sans", sans-serif;
     font-size: 14px;
     color: #fff;
     padding-top: 2px;
     font-weight: 100;
-    padding-bottom: 6px;
-    letter-spacing: 0.2px;
+    padding-bottom: 9px;
+    letter-spacing: 0px;
 }
 .advantages-description-image{
     position: relative;
@@ -161,11 +165,12 @@ body{
     height: auto;
     top: -77px;
 }
-/*.advantages-image2{
-    position: absolute;
-    width: 67%;
+.advantages-description-image2{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
     overflow: hidden;
-    left: 0;
 }
 .advantages-description2{
     width: 33%;
@@ -174,12 +179,18 @@ body{
     background-color: #81b3d2;
     overflow: hidden;
 }
+.advantages-image2{
+    position: absolute;
+    width: 67%;
+    overflow: hidden;
+    left: 0;
+}
 .advantages-image2 img{
     position: relative;
     width: 100%;
     height: auto;
     top: -77px;
-} пыталась перевести второю картинку в право но куда то пропадает блок */ 
+} 
 .advantages-icon div{
     text-align: center;
     width: 400px;
@@ -228,7 +239,7 @@ body{
     padding-top: 22px;
     background-color: #fff;
     font-family: "PT Sans", sans-serif;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 21px;
     letter-spacing: -0.5px;
 }
@@ -247,7 +258,7 @@ body{
     display: inline-block;
     color: #fff;
     font-family: "PT Sans", sans-serif;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 21px;
     text-decoration: none;
     padding-top: 30px;
@@ -277,9 +288,9 @@ body{
     font-size: 14px;
     letter-spacing: 0.3px;
 }
-.hotel-form .arrival input{
+.hotel-form .arrival input,
+.hotel-form .departure input {
     width: 345px;
-    margin-top: -13px;
     background-color: #f2f2f2;
     border: none;
     font-family: "PT Sans", sans-serif;
@@ -287,52 +298,41 @@ body{
     font-size: 14px;
     text-transform: uppercase;
     color: #000;
-    padding: 15px;
+    padding: 10px;
     box-sizing: border-box;
     float: right;
-    margin-left: 23px;
+    margin-left: 14px;
 }
-..arrival{
+.arrival,
+.departure {
     margin-bottom: 28px;
+    position: relative;
 }
-.hotel-form .arrival input:hover{
+.hotel-form .arrival input:hover {
     background-color: #ebebeb;
 }
-.hotel-form .arrival input:focus{
+.hotel-form .arrival input:focus {
     background-color: #fff;
 }
-.hotel-form .departure input{
-    width: 345px;
-    margin-top: -13px;
-    background-color: #f2f2f2;
-    border: none;
-    font-family: "PT Sans", sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #000;
-    padding: 15px;
-    box-sizing: border-box;
-    float: right;
-    margin-left: 23px;
-}
-.hotel-form .departure input:hover{
+.hotel-form .departure input:hover {
     background-color: #ebebeb;
 }
-.hotel-form .departure input:focus{
+.hotel-form .departure input:focus {
     background-color: #fff;
 }
-.hotel-form-search1{
-    margin-top: 10px;
+.hotel-form-search1 {
+    margin-top: 12px;
     float: left;
-    margin-right: 40px;
+    margin-right: 34px;
 }
-.hotel-grown{
+.hotel-grown {
     float: left;
     margin-right: 50px;
     font-size: 0;
+    margin-left: 5px;
 }
-.hotel-grown input{
+.hotel-grown input,
+.hotel-children input {
     width: 38px;
     height: 38px;
     border: none;
@@ -344,71 +344,82 @@ body{
     display: inline-block;
     vertical-align: middle;
     box-sizing: border-box;
-    padding: 0.7px;
+    padding: 0 7px;
     text-align: center;
 }
-.hotel-grown button{
-    color: #a9a9a9;
-    font-size: 110;
-    width: 22px;
+.calendar {
+    position: absolute;
+    top: 8px;
+    right: 9px;
+    width: 21px;
+    height: 22px;
+    background-image: url(../img/spritesheet.png);
+    background-position: -30px -30px;
+    cursor: pointer;
 }
-.hotel-form-search2{
+.calendar:hover{
+    background-image: url(../img/spritesheet.png);
+    background-position: -192px -30px;    
+}
+.calendar:active{
+    background-image: url(../img/spritesheet.png);
+    background-position: -111px -30px;    
+}
+.hotel-form-search2 {
     margin-top: 10px;
     float: left;
-    margin-right: 25px;
+    margin-right: 15px;
 }
-.hotel-children{
+.hotel-children {
     float: right;
-  font-size: 0;
+    font-size: 0;
 }
-.hotel-grown button{
-    width: 38px;
-    height: 38px;
-    border: none;
-    background-color: #f2f2f2;
+.hotel-grown button,
+.hotel-children button {
     font-family: "PT Sans", sans-serif;
-    font-weight: bold;
-    font-size: 14px;  
-    display: inline-block;
-    vertical-align: middle;
-}
-.hotel-children button{
     width: 38px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #a9a9a9;
     height: 38px;
-    margin: -4px;
-    border: none;
-    background-color: #f2f2f2;
-    font-family: "PT Sans", sans-serif;
-    font-weight: bold;
-    font-size: 14px;   
-}
-.hotel-children input{
-    width: 22px;
-    min-height: 36px;
     border: none;
     background-color: #f2f2f2;
     font-family: "PT Sans", sans-serif;
     font-weight: bold;
     font-size: 14px;
-    text-transform: uppercase;
-    padding-left: 15px;  
+    display: inline-block;
+    vertical-align: middle;
 }
-.hotel-btn{
-    width: 463px;
+.hotel-grown button:hover,
+.hotel-children button:hover{
+    color: #000;
+}
+.hotel-grown button:active,
+.hotel-children button:active{
+    color: #81b3d2;
+}
+.arrival-label,
+.departure-label {
+    float: left;
+    margin-top: 10px;
+}
+.hotel-btn {
+    width: 458px;
     background-color: #81b3d2;
     border: none;
     margin-top: 54px;
     font-family: "PT Sans", sans-serif;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 21px;
     color: #fff;
-    padding: 20px;
+    padding: 16px;
+    padding-bottom: 15px;
     cursor: pointer;
 }
-.hotel-btn:hover{
+.hotel-btn:hover {
     background-color: #669ec0;
 }
-.hotel-btn:active{
+.hotel-btn:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.9);
 }
@@ -432,7 +443,7 @@ body{
 }
 .footer-icon a{
     display: inline-block;
-    margin-top: 36px; 
+    margin-top: 34px; 
 }
 .footer-icon a{
     width: 46px;
@@ -450,19 +461,19 @@ body{
 }
 .footer-icon .tw{
     background-image: url(../img/spritesheet.png);
-    background-position: -165px -168px;
+    background-position: -260px -112px;
     background-color: #81b3d2;
 }
 .footer-icon .fb{
     background-image: url(../img/spritesheet.png);
     background-color: #81b3d2;
-    background-position: 254px 212px;
+    background-position:  -12px -99px;
     
 }
 .footer-icon .yt{
     background-image: url(../img/spritesheet.png);
     background-color: #81b3d2;
-    background-position: -243px -168px;
+    background-position: -337px -112px;
 }
 .footer-logo{
     font-family: "PT Sans", sans-serif;
@@ -478,16 +489,19 @@ body{
     position: absolute;
     top: 0px;
 }
-
-
-
+.footer-logo a:hover{
+    background-image: url(../img/spritesheet.png);
+    background-position: -273px -30px;
+}
 
 /*Sedona-hotels.html*/
 .choice{
     display: flex;
     min-height: 216px;
     width: 1200px;
-    background-image: url(../img/background-hotel.jpg);
+    background-image: url(../img/backgroun-sedona-hotels.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -287px;
     font-family: "PT Sans", sans-serif;
     font-size: 14px;
     color: #fff;
@@ -498,46 +512,178 @@ body{
     font-size: 16px;  
     font-weight: 500;
 }
-.choice label{
+.choice-item label{
     font-family: "PT Sans", sans-serif;
     font-size: 14px;  
     font-weight: 200;
-    margin-left: 20px;
-    display: inline-block;
-    margin-top: 13px;
+    margin-left: 40px;
+    display: block;
+    margin-top: 25px;
+    padding-bottom: 2px;
     letter-spacing: 0px;
+    position: relative;
 }
 .choice-infrastruktura{
     width: 312px;
     margin-left: 70px;
     margin-top: 15px;
 }
+.choice-item span,
+.choice-item input{
+    position: absolute;
+}
+.choice-item input{
+    left: -99999px;
+    top: 0;
+}
+.choice-item span{
+    display: block;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #fff;
+    left: -38px;
+    top: 0;
+    border-radius: 20%;
+}
 .choice-type{
     width: 288px;
-    margin-left: -50px;
+    margin-left: -56px;
     margin-top: 15px;
 }
-.choice-price{
-    width: 600px;
-    margin-top: 15px;
-    text-align: center;
-    letter-spacing: 0px;
+.pool-check span:before,
+.hotel-check span:before,
+.motel-check span:before,
+.appartment-check span:before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 12px;
+    background: #fff;
+    top: 4px;
+    right: 10px;
+    border-radius: 4px;
+    transform: rotate(-28deg);
 }
-.choice-price div{
-    width: 160px;
-    min-height: 25px;
-    border: solid 2px #fff;
-    text-align: center;
-    vertical-align: middle;
+.pool-check span:after,
+.hotel-check span:after,
+.motel-check span:after,
+.appartment-check span:after{
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 20px;
+    background: #fff;
+    top: -3px;
+    left: 12px;
+    transform: rotate(46deg);
+    border-radius: 4px;
+}
+.filter-range {
+    width: 320px;
+    margin-top: 15px; 
+    margin-left: 194px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.filter-range-title {
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+.price-controls {
+    position: relative;
+    height: 32px;
+    margin-bottom: 20px;
+    font-size: 0;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+.price-controls label {
     display: inline-block;
-    padding-top: 5px;
-    margin-left: -5px;
+    font-size: 14px;
+    line-height: 30px;
+    vertical-align: top;
+    cursor: pointer;
 }
-.choice-price input{
-    display: block;   
+.price-controls .min-price,
+.price-controls .max-price {
+    width: 80px;
+    padding-left: 65px;
 }
-.choice-price h2{
-    margin-left: -8px;
+.price-controls input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;  
+    font-weight: 200;
+}
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+.range-toggle:hover {
+    background: #1c4f80;
+}
+.range-toggle-min {
+    left: 0;
+}
+.range-toggle-max {
+    left: 80%;
+}
+.btn-transparent {
+    display: block;
+    margin-left: 87px;
+    padding: 6px 33px;
+    padding-right: 33px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+    letter-spacing: -1px;
+}
+.btn-transparent:hover {
+    color: #000000;
+    background: #ffffff;
 }
 .found{
     display: flex;
@@ -546,6 +692,7 @@ body{
     background-color: #fff;
     border-bottom: 1px solid #cacaca;
     padding-bottom: 8px;
+    position: relative;
 }
 .found-title{
     font-family: "PT Sans", sans-serif;
@@ -582,10 +729,52 @@ body{
     color: #cacaca;
     border-bottom: 1px dotted #81b3d2;
 }
+.found a:hover{
+    border-bottom: 1px dotted #81b3d2;
+    color: #81b3d2;
+}
+.found a:active{
+    color: #000;
+}
 .found-rating a{
     margin-left: 9px;
     color: #cacaca;
     border-bottom: 1px dotted #81b3d2;
+}
+.found-up-down{
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.found-up{
+    border: 10px solid transparent;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-bottom: 10px solid #e8e7e7;
+    position: absolute;
+    left: 505px;
+    top: 20px;   
+}
+.found-down{
+    border: 10px solid transparent;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-top: 10px solid #81b3d2;
+    position: absolute;
+    left: 528px;
+    top: 30px;   
+}
+.found-up-down .found-up:hover{
+    border-bottom: 10px solid #000;
+}
+.found-up-down .found-down:hover{
+    border-top: 10px solid #000;
+}
+.found-up-down .found-up:active{
+    border-bottom: 10px solid #81b3d2;
+}
+.found-up-down .found-down:active{
+    border-top: 10px solid #81b3d2;
 }
 .found-hotels{
     display: flex;
@@ -604,6 +793,12 @@ body{
 .found-hotels-dtscription h2{
     margin: 0;
     margin-top: 25px;
+}
+.found-hotels-dtscription h2:hover{
+    color: #81b3d2;
+}
+.found-hotels-dtscription h2:active{
+    color: #cacaca;
 }
 .found-hotels-dtscription p{
     display: inline-block;
@@ -629,6 +824,13 @@ body{
     font-size: 14px;
     margin-top: 15px;
 }
+.found-hotels-more:hover{
+    background-color: #669ec0;
+}
+.found-hotels-more:active{
+    background-color: #669ec0;
+    color: #94b9d2;
+}
 .found-hotels-book{
     display: inline-block;
     min-height: 20px;
@@ -645,19 +847,34 @@ body{
     margin-top: 15px;
     margin-left: 3px;
 }
+.found-hotels-book:hover{
+    background-color: #604e43;
+}
+.found-hotels-book:active{
+    background-color: #503e33;
+    color: #928a85;
+}
 .found-hotels-star{
     margin-top: 28px;
     text-align: right;
     
 }
 .found-hotels-rating{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 300;
+ 
+}
+.found-hotels-rating p{
+        font-family: "PT Sans", sans-serif;
+    font-weight: 100;
     font-size: 14px;
     background-color: #f2f2f2;
     width: 110px;
     text-align: center;
-    min-height: 26px;/*yе смогла по центру сделать*/
+    margin: 0;
+    margin-top: 43px;
+    color: #7e7e7e;
+    min-height: 22px;
+    padding-top: 5px;
+    
 }
 .found-hotels-valuation{
     margin-right: 72px;    
@@ -671,6 +888,3 @@ body{
     font-size: 21px;
     width: 1200px;
 }
-/*
-не смогла сдвинуть гостиницы правее?
-как сделать "-" по длиннее ?

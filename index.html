@@ -13,13 +13,15 @@
          <nav class="main-navigation">
             <ul>
                <li><a href="#">Информация</a></li>
-               <li><a href="sedona-hotels.html">Фото и видео</a></li>
-               <li><a href="#">Гостиницы</a></li>
+               <li><a href="#">Фото и видео</a></li>
+               <li><a href="sedona-hotels.html">Гостиницы</a></li>
                <li><a href="#">Карта штата</a></li>
             </ul>
          </nav>
          <div class="logo">
-            <img src="img/logomainsedona.png" alt="логотип" width="135" height="70">
+            <a href="index.html">
+               <img src="img/logomainsedona.png" alt="логотип" width="135" height="70">
+            </a>
          </div> 
       </header>
       <main class="content">
@@ -29,15 +31,15 @@
             </div>
          </div>
          <div class="subtitle">
-            <h2 class="subtitle-title">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+            <h2 class="subtitle-title">Седона &#8212 небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Коньон!</p>
          </div>
          <section class="advantages">
             <div class="advantages-item advantages-description-image">
                <div class="advantages-description">
                   <p class="advantages-item-bold">Настоящий <br>городок</p>
-                  <p class="advantages-item-Regular">-№1-</p>
-                  <p class="advantages-item-Regular">Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
+                  <p class="advantages-item-regular">&#8212 №1 &#8212</p>
+                  <p class="advantages-item-regular">Седона &#8212 не аттракцион для туристов,<br> там течет своя жизнь</p>
                </div>
                <div class="advantages-image">
                   <img src="img/img-discription-index1.jpg" width="800px" height="400px" alt="Седона">
@@ -60,30 +62,30 @@
                   <p>Не только китайского, но и местного<br> производства!</p>
                </div>
             </div>
-            <div class="advantages-item advantages-description-image">
-               <div class="advantages-image advantages-image2">
+            <div class="advantages-item advantages-description-image2">
+               <div class="advantages-image2">
                   <img src="img/img-description-index2.jpg" width="800" height="400" alt="Седона">
                </div>
-               <div class="advantages-description advantages-description2">
+               <div class="advantages-description2">
                   <h3 class="advantages-item-bold">Там есть <br>мост дьявола</h3>
-                  <p class="advantages-item-Regular">-№2-</p>
-                  <p class="advantages-item-Regular">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+                  <p class="advantages-item-regular">&#8212 №2 &#8212</p>
+                  <p class="advantages-item-regular">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
                </div>
             </div>
             <div class="advantages-item advantages-square">
                <div class="advantages-square1">
                   <h3>Небольшая<br> площадь</h3>
-                  <p>-№3-</p>
+                  <p>&#8212 №3 &#8212</p>
                   <p class="advantages-square-item">Все достопримечательности<br> находятся очень близко</p>
                </div>
                <div class="advantages-square2">
                   <h3>Красивая<br> дорога</h3>
-                  <p>-№4-</p>
+                  <p>&#8212 №4 &#8212</p>
                   <p class="advantages-square-item">Ехать в Седону из Лас-Вегаса совсем <br>не скучно!</p>
                </div>
                <div class="advantages-square3">
                   <h3>Мало<br> туристов</h3>
-                  <p>-№5-</p>
+                  <p>&#8212 №5 &#8212</p>
                   <p class="advantages-square-item">Большинство едет в Гранд Каньон и<br> толпится там</p>
                </div>
             </div>
@@ -97,26 +99,32 @@
             <div class="hotel-map">
                <div class="hotel-form">
                   <form action="#" method="post">
-                     <div class="arrival"><label for="arrival"> Дата заезда:
-                     <input type="text" name="calendar" id="arrival" placeholder="24 апреля 2017"></label></div>  
-                     <div class="departure"><label for="hotel-departure"> Дата выезда:
-                     <input type="text" name="calendar" id="hotel-departure" placeholder="4 июля 2017"></label></div>
+                     <div class="arrival clearfix">
+                        <label for="arrival" class="arrival-label"> Дата заезда:</label>
+                        <input type="text" name="calendar" id="arrival" placeholder="24 апреля 2017">
+                        <span class="calendar"></span>
+                     </div>
+                     <div class="departure clearfix">
+                        <label for="hotel-departure" class="departure-label"> Дата выезда:</label>
+                        <input type="text" name="calendar" id="hotel-departure" placeholder="4 июля 2017">
+                        <span class="calendar"></span>
+                     </div>
                      <label class="hotel-form-search1">Взрослые:</label>
                      <div class="hotel-grown">
-                        <button type="button">-</button>
+                        <button type="button">&#8212</button>
                         <input type="text" name="number" placeholder="2">
                         <button type="button">+</button>
                      </div>
                      <label class="hotel-form-search2">Дети:</label>
                      <div class="hotel-children">
-                        <button type="button">-</button>
+                        <button type="button">&#8212</button>
                         <input type="text" name="number" placeholder="0">
                         <button type="button">+</button>
                      </div>
                      <input type="submit" value="НАЙТИ" class="hotel-btn">
                   </form>
-               </div>  
-            </div> 
+               </div>
+            </div>
          </section>
       </main>
       <footer class="footer">

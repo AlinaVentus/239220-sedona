@@ -9,44 +9,73 @@
    <div class="container">
       <header class="main-header">
          <nav class="main-navigation">
-            <ul>
+            <ul class="clearfix">
                <li><a href="#">Информация</a></li>
                <li><a href="sedona-hotels.html">Фото и видео</a></li>
-               <li><a href="#">Гостиницы</a></li>
+               <li class="active-link"><a href="#">Гостиницы</a></li>
                <li><a href="#">Карта штата</a></li>
             </ul>
          </nav>
          <div class="logo">
-            <img src="img/logomainsedona.png" alt="логотип" width="135" height="70">
+            <a href="index.html">
+               <img src="img/logomainsedona.png" alt="логотип" width="135" height="70">
+            </a>
          </div> 
       </header>
       <main class="content">
          <div class="choice">
             <form action="alinaaa_88@mail.ru" method="post" class="choice">
-               <div class="choice-infrastruktura">
+               <div class="choice-item choice-infrastruktura">
                   <h2>Инфраструктура:</h2>
-                  <p><input type="checkbox" id="choice-pool">
-                  <label for="choice-pool">Бассейн</label></p>
-                  <p><input type="checkbox" id="choice-parking">
-                  <label for="choice-parking">Парковка</label></p>
-                  <p><input type="checkbox" id="choice-wi-fi">
-                  <label for="choice-wi-fi">WI-FI</label></p>
-               </div>
-               <div class="choice-type">
+                  <label class="pool-check">Бассейн
+                     <input type="checkbox">
+                     <span></span>
+                  </label>
+                  <label>Парковка
+                     <input type="checkbox">
+                     <span></span>
+                  </label>
+                  <label>WI-FI
+                     <input type="checkbox">
+                     <span></span>
+                  </label>
+               </div> 
+               <div class="choice-item choice-type">
                   <h2>Тип жилья:</h2>
-                  <p><input type="checkbox" id="choice-hotel">
-                  <label for="choice-hotel">Гостиница</label></p>
-                  <p><input type="checkbox" id="choice-motel">
-                  <label for="choice-motel">Мотель</label></p>
-                  <p><input type="checkbox" id="choice-apartment">
-                  <label for="choice-apartment">Апартаменты</label></p>
+                  <label class="hotel-check">Гостиница
+                     <input type="checkbox">
+                     <span></span>
+                  </label>
+                  <label class="motel-check">Мотель
+                     <input type="checkbox">
+                     <span></span>
+                  </label>
+                  <label class="appartment-check">Апартаменты
+                     <input type="checkbox" >
+                     <span></span>
+                  </label>
                </div>
-               <div class="choice-price">
-                  <h2>Стоимость в сутки(р):</h2>
-                  <div>0</div>
-                  <div>300</div>
-                  <input type="range" min="0" max="300" step="1"> 
-                  <button type="button">Показать</button>
+               <div class="choice-price filter-range">
+                  <h2 class="filter-range-title">Стоимость в сутки(р):</h2>
+                  <div class="price-controls">
+                  <label class="min-price">от
+                     <input type="text" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">до
+                     <input type="text" name="max-price" value="3000">
+                  </label>
+                  </div>
+                  <div class="range-controls">
+                      <div class="scale">
+                          <div class="bar"></div>
+                      </div>
+                      <div class="range-toggle range-toggle-min">
+                          
+                      </div>
+                      <div class="range-toggle range-toggle-max"></div>
+                  </div>
+                  
+                  <button type="button" class="btn-transparent">Показать</button>
                </div>
             </form>
          </div>
@@ -59,8 +88,8 @@
                <li class="found-rating"><a href="#">По рейтингу</a></li>
             </ul>
             <div class="found-up-down">
-               <a href="#"></a>
-               <a href="#"></a>
+               <a href="#" class="found-up"></a>
+               <a href="#" class="found-down"></a>
             </div>
          </div>
          <div class="found-hotels">
