@@ -796,17 +796,19 @@ body{
     width: 800px;
 }
 .found-hotels-discription h2{
-    margin: 0px;
-    margin-top: 25px;
+    margin-top: 27px;
+    margin-bottom: 0px;
 }
 .found-hotels-discription a{
+    margin: 0px;
+    margin-top: 15px;
     text-decoration: none;
     color: #000000;
 }
-.found-hotels-discription h2:hover{
+.found-hotels-discription a:hover{
     color: #81b3d2;
 }
-.found-hotels-discription h2:active{
+.found-hotels-discription a:active{
     color: #cacaca;
 }
 .found-hotels-discription p{
@@ -818,7 +820,7 @@ body{
     margin-top: 7px;
     width: 112px;
 }
-.found-hotels-more{
+.found-hotels-discription .found-hotels-more{
     display: inline-block;
     min-height: 20px;
     width: 110px;
@@ -833,14 +835,15 @@ body{
     font-size: 14px;
     margin-top: 15px;
 }
-.found-hotels-more:hover{
+.found-hotels-discription .found-hotels-more:hover{
     background-color: #669ec0;
+    color: #ffffff;
 }
-.found-hotels-more:active{
+.found-hotels-discription .found-hotels-more:active{
     background-color: #669ec0;
     color: #94b9d2;
 }
-.found-hotels-book{
+.found-hotels-discription .found-hotels-book{
     display: inline-block;
     min-height: 20px;
     width: 142px;
@@ -856,10 +859,11 @@ body{
     margin-top: 15px;
     margin-left: 3px;
 }
-.found-hotels-book:hover{
+.found-hotels-discription .found-hotels-book:hover{
     background-color: #604e43;
+    color: #ffffff;
 }
-.found-hotels-book:active{
+.found-hotels-discription.found-hotels-book:active{
     background-color: #503e33;
     color: #928a85;
 }
