@@ -469,8 +469,7 @@ body{
 .footer-icon .fb{
     background-image: url(../img/spritesheet.png);
     background-color: #81b3d2;
-    background-position: -12px -99px;
-    
+    background-position: -12px -99px;  
 }
 .footer-icon .yt{
     background-image: url(../img/spritesheet.png);
