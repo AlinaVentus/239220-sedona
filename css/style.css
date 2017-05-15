@@ -118,23 +118,17 @@ body{
     font-weight: 400;
     font-size: 21px;
     color: #fff;
-    padding-top: 27px;
     line-height: 1;
-    padding-left: 9px;
+    margin: 0;
 }
 .advantages-item-regular{
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     color: #ffffff;
-    padding-top: 2px;
     font-weight: 100;
-    padding-bottom: 9px;
-    letter-spacing: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 10px;
+    margin: 0px;
 }
 .advantages-item-last{
-    margin-top: 0px;
 }
 .advantages-description-image{
     position: relative;
@@ -193,7 +187,7 @@ body{
     width: 400px;
     padding-top: 60px;
     background-color: #fff;
-    padding-bottom: 67px;
+    padding-bottom: 82px;
     letter-spacing: 0px;
 }
 .advantages-icon div:last-child{
@@ -208,6 +202,7 @@ body{
     line-height: 1.5;
     font-weight: 100;
     color: #333333;
+    margin: 0px;
 }
 .advantages-square div{
     background: #f2f2f2;
@@ -417,16 +412,21 @@ body{
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.9);
 }
-.footer{
-    display: flex;
-    min-height: 120px;
-    background-color: rgba(255, 255, 255, 0.9);
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 21px;
-    width: 1200px;
-    top: 2644px;
+.footer-inner{
+    position: relative;
+    width: 100%;
+}
+.main-footer{
     position: absolute;
+    bottom: 0px;
+    background-color: #f9fbf6;
+    padding-top: 34px;
+    padding-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 120px;
+    opacity: 0.9;
+    display: flex;
 }
 .footer-item{
     width: 400px;
@@ -889,13 +889,4 @@ body{
 }
 .found-hotels-valuation{
     margin-right: 72px;    
-}
-.footer-hotels{
-    display: flex;
-    min-height: 120px;
-    background-color: #fff;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 21px;
-    width: 1200px;
 }
