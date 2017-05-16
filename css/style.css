@@ -20,23 +20,31 @@ body{
     max-width: 1200px;
     box-shadow: 0 0 10px 3px rgba(0,0,0,0.2);
 }
-.main-header ul{
-    padding: 0px;
-    margin: 0px;
-}
 .main-navigation ul{
-    display: flex;
-    justify-content: flex-start;
     padding: 0px;
     margin: 0px;
+    display: flex;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 .main-navigation li{
-    width: 239px;
-    text-align: center;
-    padding-top: 18px;
-    font-weight: 600;
-    color: #000000;
+    margin: 0px;
+    width: 20%;
+    line-height: 56px;
+    vertical-align: middle;
     list-style-type: none;
+}
+.main-navigation li:first-child{
+    text-align: left;
+}
+.main-navigation li:nth-child(2){
+    padding-left: 75px;
+}
+.main-navigation li:nth-child(3){
+    margin-left: 323px;
+}
+.main-navigation li:last-child{
+    text-align: right;
 }
 .main-header a:hover{
     color: #81b3d2;
@@ -114,6 +122,9 @@ body{
     display: flex;
 }
 .advantages-item-bold{
+    margin-top: 47px;
+}
+.advantages-item-bold p{
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 21px;
@@ -121,14 +132,18 @@ body{
     line-height: 1;
     margin: 0;
 }
-.advantages-item-regular{
+.advantages-item-regular p{
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     color: #ffffff;
     font-weight: 100;
     margin: 0px;
 }
-.advantages-item-last{
+.advantages-item-number{
+    margin-top: 25px;
+}
+.advantages-item-regular{
+    margin-top: 24px;
 }
 .advantages-description-image{
     position: relative;
@@ -205,35 +220,48 @@ body{
     margin: 0px;
 }
 .advantages-square div{
-    background: #f2f2f2;
+    background: #eeeeee;
     text-align: center;
     width: 400px;
-    padding-top: 27px;
     line-height: 1;
-    padding-bottom: 23px;
 }
 .advantages-square p{
-    font-weight: 100;
     color: #333333;
-    padding-top: 5px;
+    margin: 0px;
 }
-.advantages-square h3{
+.advantages-square-bold{
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 21px;
-    font-weight: bold;    
+    font-weight: bold; 
+    padding-top: 48px;
+    letter-spacing: 0.5px;
 }
-.advantages-square-item{
-    margin-top: 20px;
-    line-height: 1.7;
+.advantages-square-number{
+    margin-top: 28px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+.advantages-square-regular{
+    margin-top: 23px;
+    padding-bottom: 58px;
+}
+.advantages-square-regular p{
+    padding: 4px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
 }
 .hotel-title{
     text-align: center;
-    padding-top: 22px;
+    padding-top: 48px;
     background-color: #ffffff;
     font-family: "PT Sans", "Arial", sans-serif;
-    font-weight: 400;
     font-size: 21px;
     letter-spacing: -0.5px;
+}
+.hotel-title h2{
+    margin: 0px;
 }
 .hotel-title p{
     font-family: "PT Sans", "Arial", sans-serif;
@@ -242,7 +270,10 @@ body{
     line-height: 1.6;
     font-weight: 100;
     color: #333333;
-    margin-top: -4px;
+    margin: 0px;
+}
+.hotel-title-regular{
+    padding-top: 23px;
 }
 .title-form{
     width: 570px;
@@ -254,7 +285,7 @@ body{
     font-size: 21px;
     text-decoration: none;
     padding-top: 30px;
-    margin-top: 35px;
+    margin-top: 48px;
     padding-bottom: 29px;
     letter-spacing: 0px;
 }
@@ -419,12 +450,10 @@ body{
 .main-footer{
     position: absolute;
     bottom: 0px;
-    background-color: #f9fbf6;
-    padding-top: 34px;
-    padding-bottom: 15px;
+    background-color: #fefefe;
     width: 100%;
     box-sizing: border-box;
-    min-height: 120px;
+    min-height: 122px;
     opacity: 0.9;
     display: flex;
 }
@@ -433,16 +462,20 @@ body{
     text-align: center;
 }
 .footer-visit{
-    padding-top: 45px;
+    padding-top: 47px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+}
+.footer-icon{
+    margin-left: -3px;
 }
 .footer-icon a{
     display: inline-block;
-    margin-top: 34px; 
-}
-.footer-icon a{
+    margin-top: 36px;
     width: 46px;
     min-height: 48px; 
-    margin-left: 0px;
+    margin-left: 2px;
     text-decoration: none;
     text-indent: -999999px;
 }
@@ -473,7 +506,7 @@ body{
     font-size: 14px;
     position: relative;
     margin-top: 35px;
-    margin-left: -60px;
+    margin-left: -57px;
     font-weight: 100;
 }
 .footer-logo a{
@@ -801,6 +834,7 @@ body{
 .found-hotels-discription h2{
     margin-top: 27px;
     margin-bottom: 0px;
+    letter-spacing: 0.2px;
 }
 .found-hotels-discription a{
     margin: 0px;
@@ -889,4 +923,9 @@ body{
 }
 .found-hotels-valuation{
     margin-right: 72px;    
+}
+.hotels-footer{
+    display: flex;
+    background-color: #ffffff;
+    padding-bottom: 47px;
 }
