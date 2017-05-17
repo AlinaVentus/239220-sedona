@@ -336,15 +336,15 @@ body{
     position: relative;
 }
 .arrival input::-webkit-input-placeholder,
-.departure input::-webkit-input-placeholder,{
+.departure input::-webkit-input-placeholder{
     color: #000000;
 }
 .arrival input::-moz-input-placeholder,
-.departure input::-moz-input-placeholder,{
+.departure input::-moz-input-placeholder{
     color: #000000;
 }
 .arrival input::-ms-input-placeholder,
-.departure input::-ms-input-placeholder,{
+.departure input::-ms-input-placeholder{
     color: #000000;
 }
 .hotel-arrival:hover{
