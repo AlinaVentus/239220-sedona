@@ -78,7 +78,7 @@ body{
     top: 0px;
 }
 .main-image{
-    background: url("../img/backgroundmainimg.jpg") no-repeat;
+    background: #ac7f80 url("../img/backgroundmainimg.jpg") no-repeat;
     background-size: 1200px auto;
     min-height: 510px;
     position: relative;
@@ -109,12 +109,13 @@ body{
     font-weight: 600;
     font-size: 21px;
     line-height: 0px;
-    margin-top: 30px;
+    margin: 0px;
+    margin-top: 28px;
 }
 .subtitle p{
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
-    margin-top: 40px;
+    margin-top: 43px;
     font-weight: 100;
     color: #333333;
 }
@@ -275,7 +276,7 @@ body{
 .hotel-title-regular{
     padding-top: 23px;
 }
-.title-form{
+.hotel-title button{
     width: 570px;
     background-color: #766357;
     display: inline-block;
@@ -283,15 +284,16 @@ body{
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 500;
     font-size: 21px;
-    text-decoration: none;
+    border: none;
     padding-top: 30px;
     margin-top: 48px;
     padding-bottom: 29px;
     letter-spacing: 0px;
+    text-transform: uppercase;
 }
 .hotel-map{
     min-height: 595px;
-    background-image: url(../img/map2.jpg);
+    background: #cbdda9 url(../img/map2.jpg);
     padding: 0px;
     position: relative;
 }
@@ -324,7 +326,9 @@ body{
     padding: 10px;
     box-sizing: border-box;
     float: right;
-    margin-left: 14px;
+}
+.hotel-form .arrival input{
+    margin-left: 5px;
 }
 .arrival,
 .departure{
@@ -391,7 +395,7 @@ body{
 .hotel-form-search2{
     margin-top: 10px;
     float: left;
-    margin-right: 15px;
+    margin-right: 9px;
 }
 .hotel-children{
     float: right;
@@ -435,6 +439,7 @@ body{
     padding: 16px;
     padding-bottom: 15px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 .hotel-btn:hover{
     background-color: #669ec0;
@@ -533,7 +538,7 @@ body{
     display: flex;
     min-height: 216px;
     width: 1200px;
-    background-image: url(../img/backgroun-sedona-hotels.jpg);
+    background: #ac7f80 url(../img/backgroun-sedona-hotels.jpg);
     background-repeat: no-repeat;
     background-position: 0px -287px;
     font-family: "PT Sans", "Arial", sans-serif;
